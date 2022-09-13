@@ -5,9 +5,11 @@ import CharButton from "./components/characters";
 import LocationButton from "./components/locationb";
 import { useFetch } from "./api/useFetch";
 import { useEffect } from "react";
+import Navigation from "./components/Navigation";
 
 function App() {
   const [char, setChar] = useState(false);
+  const [selected, setSelected] = useState("ch");
 
   const characters = useCharacters(1);
   const locations = useLocations(1);
@@ -29,8 +31,11 @@ function App() {
     <div className="App">
       <div className="logo">----------Logo----------</div>
       <div className="buttons">
-        <button className="char-button">Characters</button>
-        <button className="location-button">Locations</button>
+        <Navigation
+          onNavigate={(where) => {
+            setSelected(where);
+          }}
+        />
         <div className="basic info">
           Hello! There is some infos for really big Rick and Morty fans
         </div>
