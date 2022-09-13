@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
-import Main from "./components/main";
+import CharButton from "./components/characters";
+import LocationButton from "./components/locationb";
 import { useFetch } from "./api/useFetch";
 import { useEffect } from "react";
 
