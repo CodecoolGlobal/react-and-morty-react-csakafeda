@@ -19,16 +19,16 @@ export default function CharacterListing({ charlist }) {
   function showCharacterInfo(char) {
     console.log(char);
 
-    // return (
-    //   <ul>
-    //     {char.name}
-    //     <img src={char.image} />
-    //     <li>{char.gender}</li>
-    //     <li>{char.status}</li>
-    //     <li>{char.species}</li>
-    //     <li>{char.status}</li>
-    //   </ul>
-    // );
+    return (
+      <ul>
+        {char.name}
+        <img src={char.image} />
+        <li>{char.gender}</li>
+        <li>{char.status}</li>
+        <li>{char.species}</li>
+        <li>{char.status}</li>
+      </ul>
+    );
   }
 
   const charactersArray = charlist.results;
