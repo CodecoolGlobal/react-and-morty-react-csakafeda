@@ -5,7 +5,6 @@ import Characterinfo from "./CharacterInfo";
 
 export default function CharacterListing({ charlist }) {
   const [characterList, setCharacterList] = useState(false);
-  console.log(charlist)
 
   useEffect(() => {
     if (charlist.results === undefined) {

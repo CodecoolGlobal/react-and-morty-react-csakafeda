@@ -2,12 +2,10 @@ import { useState } from "react";
 
 export default function Characterinfo({ charlist }) {
   const [showMore, setShowMore] = useState(false);
-  const [currentChar, setCurrentChar] = useState(null);
   return (
     <div
       onClick={() => {
         setShowMore(!showMore);
-        setCurrentChar(charlist.id);
       }}
     >
       {!showMore ? (

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
 import LocationList from "./components/Location";
-import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
 import logo from "./components/rnm.jpg";
@@ -42,8 +41,7 @@ function App() {
           <CharacterList charlist={characters} />
         </div>
       ) : (
-        <LocationList loclist={locations}  locid={locations.id}/>
-
+        <LocationList loclist={locations} locid={locations.id} />
       )}
     </div>
   );

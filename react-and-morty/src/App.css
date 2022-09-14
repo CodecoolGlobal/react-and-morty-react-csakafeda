@@ -27,9 +27,16 @@
   text-shadow: 1px 1px #000000;
   font-size: 30px;
 }
-.pagination{
-  display:flex;
-  justify-content:center;
+.pagination {
+  display: flex;
+  /* justify-content: center; */
   list-style: none;
-  
+}
+
+.page-item{
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border: 1px;
+
 }
