@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
-import LocationButton from "./components/locationb";
+import LocationList from "./components/Location";
 import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
@@ -32,9 +32,10 @@ function App() {
         </div>
       ) : selected === "ch" ? (
         <CharacterList charlist={characters} />
-      ) : (
-        console.log("ide jön a locations")
-      )}
+      ) :  (
+        <LocationList loclist={locations} />
+      )
+}
     </div>
   );
 }
