@@ -42,9 +42,8 @@ function App() {
           <CharacterList charlist={characters} />
         </div>
       ) : (
-        <div>
-          <LocationList loclist={locations} />
-        </div>
+        <LocationList loclist={locations}  locid={locations.id}/>
+
       )}
     </div>
   );
