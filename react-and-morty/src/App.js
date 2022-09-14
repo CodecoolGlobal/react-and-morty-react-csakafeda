@@ -4,7 +4,7 @@ import { useCharacters, useLocations } from "./api/useData";
 import LocationList from "./components/Location";
 import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
-import logo from "./components/rnm.jpg";
+import logo from "./components/IMG_0042.jpg";
 import Pagination from "./components/Pagination";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
         }}
       />
       <Pagination
+      className="pagination"
         nPages={selected === "ch" ? 42 : selected === "lc" ? 7 : 0}
         currentPage={pageNum}
         setCurrentPage={setPageNum}
