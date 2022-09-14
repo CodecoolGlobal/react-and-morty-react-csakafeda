@@ -10,6 +10,7 @@ import Pagination from "./components/Pagination";
 function App() {
   const [selected, setSelected] = useState("");
   const [pageNum, setPageNum] = useState(1);
+  // const [defaultPage, setDefaultPage ] = useState(1)
 
   const characters = useCharacters(pageNum);
   const locations = useLocations(pageNum);
@@ -17,7 +18,7 @@ function App() {
   // console.log("Characters data: ");
   // console.log(characters);
   // console.log("Locations data: ");
-  // console.log(locations);
+  console.log(locations);
 
   return (
     <div className="App">
