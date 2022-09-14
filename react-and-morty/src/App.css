@@ -1,6 +1,18 @@
-.App {
+.body{
   background-color: grey;
 }
+
+
+.App {
+  background-color: rgb(102,140,86);
+ 
+
+}
+.starting-info{
+
+  height: 100vh
+}
+
 
 .char-button,
 .location-button {
@@ -18,6 +30,8 @@
   transition-duration: 0.1s;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
 }
 
 .char-button:hover,
@@ -40,3 +54,14 @@
   border: 1px;
 
 }
+.pagination{
+  display: flex;
+  background-color: grey;
+  outline: 5px dotted green;
+}
+.logo{
+  width: 100vw;
+  height: 50vh;
+
+}
+

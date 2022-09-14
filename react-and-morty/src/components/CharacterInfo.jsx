@@ -1,25 +1,26 @@
 import { useState } from "react";
+import "./Character.css"
 
 export default function Characterinfo({ charlist }) {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div
-      onClick={() => {
-        setShowMore(!showMore);
-      }}
-    >
+    <div className="charactercardfull" onClick={() => {setShowMore(!showMore)  }}>
+      
       {!showMore ? (
-        <div>
+        <div className="basic">
           <img src={charlist.image} />
+          <div>
           <br />
           <span>Name: {charlist.name}</span>
           <br />
           <span>Species: {charlist.species}</span>
           <br />
+          </div>
         </div>
       ) : (
-        <div>
+        <div className="infoblock">
           <img src={charlist.image} />
+          <div className="info">
           <br />
           <span>Name: {charlist.name}</span>
           <br />
@@ -33,6 +34,7 @@ export default function Characterinfo({ charlist }) {
           <br />
           <span>Location: {charlist.location.name}</span>
           <br />
+          </div>
         </div>
       )}
     </div>
