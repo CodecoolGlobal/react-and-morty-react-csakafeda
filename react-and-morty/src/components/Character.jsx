@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Characterinfo from "./CharacterInfo";
 
+
 export default function CharacterListing({ charlist }) {
   const [characterList, setCharacterList] = useState(false);
   const [search, setSearch] = useEffect(() => {
