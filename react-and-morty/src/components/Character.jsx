@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { useFetch } from "../api/useFetch";
 import { useEffect } from "react";
 
 export default function CharacterListing({ charlist }) {
   const [characterList, setCharacterList] = useState(false);
-  const [currentCharacter, setCurrentCharacter] = useState("");
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     if (charlist.results === undefined) {
@@ -15,20 +14,10 @@ export default function CharacterListing({ charlist }) {
     }
   });
 
-
   function showCharacterInfo(char) {
     console.log(char);
 
-    return (
-      <ul>
-        {char.name}
-        <img src={char.image} />
-        <li>{char.gender}</li>
-        <li>{char.status}</li>
-        <li>{char.species}</li>
-        <li>{char.status}</li>
-      </ul>
-    );
+    return;
   }
 
   const charactersArray = charlist.results;
@@ -40,10 +29,24 @@ export default function CharacterListing({ charlist }) {
             className="cards"
             key={char.id}
             id={char.id}
-            onClick={() => showCharacterInfo(char)}
+            onClick={() => {
+              setShowMore(!showMore);
+            }}
           >
-            <img src={char.image} />
-            {char.name}
+            {!showMore ? (
+              <div>
+                <img src={char.image} />
+                <span>{char.name}</span>
+              </div>
+            ) : (
+                <div>
+                <img src={char.image} />
+                <span>{char.name}</span>
+                <span>{char.gender}</span>  
+              </div>
+            )}
+            {/* <img src={char.image} />
+            {char.name} */}
           </div>
         ))}
       </div>

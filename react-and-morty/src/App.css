@@ -21,10 +21,9 @@
 }
 
 .char-button:hover,
-.location-button:hover{
+.location-button:hover {
   background-color: rgb(219, 220, 94);
   color: rgb(59, 133, 167);
   text-shadow: 1px 1px #000000;
   font-size: 30px;
- 
 }

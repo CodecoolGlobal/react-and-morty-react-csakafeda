@@ -32,10 +32,9 @@ function App() {
         </div>
       ) : selected === "ch" ? (
         <CharacterList charlist={characters} />
-      ) :  (
+      ) : (
         <LocationList loclist={locations} />
-      )
-}
+      )}
     </div>
   );
 }
