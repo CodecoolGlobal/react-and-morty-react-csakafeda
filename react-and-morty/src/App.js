@@ -6,12 +6,14 @@ import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
 import logo from "./components/rnm.jpg";
+import Pagination from "./components/Pagination";
 
 function App() {
   const [selected, setSelected] = useState("");
+  const [pageNum, setPageNum] = useState(1);
 
-  const characters = useCharacters(1);
-  const locations = useLocations(1);
+  const characters = useCharacters(pageNum);
+  const locations = useLocations(pageNum);
 
   // console.log("Characters data: ");
   // console.log(characters);
@@ -26,14 +28,23 @@ function App() {
           setSelected(where);
         }}
       />
+      <Pagination
+        nPages={selected === "ch" ? 42 : selected === "lc" ? 7 : 0}
+        currentPage={pageNum}
+        setCurrentPage={setPageNum}
+      />
       {selected === "" ? (
         <div className="starting-info">
           Hello! There is some infos for really big Rick and Morty fans
         </div>
       ) : selected === "ch" ? (
-        <CharacterList charlist={characters} />
+        <div>
+          <CharacterList charlist={characters} />
+        </div>
       ) : (
-        <LocationList loclist={locations} />
+        <div>
+          <LocationList loclist={locations} />
+        </div>
       )}
     </div>
   );
