@@ -33,7 +33,7 @@ function App() {
       ) : selected === "ch" ? (
         <CharacterList charlist={characters} />
       ) : (
-        <LocationList loclist={locations} />
+        <LocationList loclist={locations}  locid={locations.id}/>
       )}
     </div>
   );

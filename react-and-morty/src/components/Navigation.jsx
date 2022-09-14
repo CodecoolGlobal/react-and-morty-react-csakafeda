@@ -12,7 +12,7 @@ const Navigation = ({ onNavigate }) => {
       <button
         className="location-button"
         onClick={() => {
-          onNavigate("kuki");
+          onNavigate("lc");
         }}
       >
         Locations
