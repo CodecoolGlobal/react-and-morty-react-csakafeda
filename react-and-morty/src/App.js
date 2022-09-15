@@ -54,7 +54,7 @@ function App() {
         <div>
           <CharacterList charlist={characters} />
         </div>
-      ) : (
+      ) :(
         <LocationList loclist={locations} locid={locations.id} />
       )}
     </div>

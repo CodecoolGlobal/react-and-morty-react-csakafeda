@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
 }
-
+.home-button,
 .char-button,
 .location-button {
   background-color: rgb(219, 220, 94);
@@ -35,7 +35,7 @@
   justify-content: center;
   border-radius: 10px;
 }
-
+.home-button:hover,
 .char-button:hover,
 .location-button:hover {
   background-color: rgb(55, 122, 64);

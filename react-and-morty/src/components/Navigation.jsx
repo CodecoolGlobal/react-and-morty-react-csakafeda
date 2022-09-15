@@ -2,7 +2,16 @@ import "../App.css";
 
 const Navigation = ({ onNavigate }) => {
   return (
+
     <div className="Navigation">
+      <button
+        className="home-button"
+        onClick={() => {
+          onNavigate("");
+        }}
+      >
+       Home
+      </button>
       <button
         className="char-button"
         onClick={() => {
@@ -19,6 +28,7 @@ const Navigation = ({ onNavigate }) => {
       >
         Locations
       </button>
+      
     </div>
   );
 };
