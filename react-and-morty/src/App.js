@@ -42,13 +42,14 @@ function App() {
       {selected === "" ? (
         <div className="starting-info-container">
           <div className="starting-info">
-            Hello! This fan website is a location/caracter libary, giving you
-            additional information to you favorite charater/location.
+            Hello stranger! This fun website is a location / caracter libary,
+            giving you additional information to your favorite
+            charaters/locations in every dimension of Rick`n Morty.
           </div>
-
-          <div className="starting-images" />
-          <img className="bug" src={pic} />
-          <img className="sitter" src={pic2} />
+          <div className="pic-container">
+            <img className="bug" src={pic} />
+            <img className="sitter" src={pic2} />
+          </div>
         </div>
       ) : selected === "ch" ? (
         <div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Character.css";
 // import PreLoadImg from "./preloadImg";
 
-export default function Characterinfo({ charlist, isLoaded }) {
+export default function Characterinfo({ charlist }) {
   const [showMore, setShowMore] = useState(false);
   // console.log(isLoaded)
   return (
@@ -16,7 +16,6 @@ export default function Characterinfo({ charlist, isLoaded }) {
         <div className="basicblock">
           <img className="image" src={charlist.image} />
           <div className="basicinfo">
-            <br />
             <span> Name: {charlist.name} </span>
             <br />
             <span> Species: {charlist.species}</span>
