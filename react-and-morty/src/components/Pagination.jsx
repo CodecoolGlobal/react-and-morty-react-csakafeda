@@ -1,3 +1,4 @@
+import "../App.css"
 export default function pagination({ nPages, currentPage, setCurrentPage }) {
   const pageNumbers = [...Array(nPages + 1).keys()].slice(1);
 
@@ -12,14 +13,16 @@ export default function pagination({ nPages, currentPage, setCurrentPage }) {
       {nPages === 0 ? (
         <div></div>
       ) : (
-        <ul className="pagination">
-          <li className="page-item">
+        <div className="pagination">
+          <div className="page">
             <a className="page-link" onClick={prevPage} href="#">
+              <div className="prev">
               Previous
+              </div>
             </a>
-          </li>
+          </div>
           {pageNumbers.map((pgNumber) => (
-            <li
+            <div
               key={pgNumber}
               className={`page-item ${
                 currentPage == pgNumber ? "active" : ""
@@ -28,14 +31,16 @@ export default function pagination({ nPages, currentPage, setCurrentPage }) {
               <a onClick={() => setCurrentPage(pgNumber)} className="page-link">
                 {pgNumber}
               </a>
-            </li>
+            </div>
           ))}
-          <li className="page-item">
+          <div className="page">
             <a className="page-link" onClick={nextPage} href="#">
+              <div className="next">
               Next
+              </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       )}
     </nav>
   );
