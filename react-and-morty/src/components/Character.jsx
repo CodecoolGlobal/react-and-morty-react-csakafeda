@@ -6,7 +6,7 @@ import Characterinfo from "./CharacterInfo";
 
 export default function CharacterListing({ charlist }) {
   const [characterList, setCharacterList] = useState(false);
-
+  // const [search, setSearch] = useState("");
   useEffect(() => {
     if (charlist.results === undefined) {
       setCharacterList(false);
@@ -19,12 +19,14 @@ export default function CharacterListing({ charlist }) {
   if (characterList) {
     return (
       <div className="char-list">
+        {/* <input
+          type="text"
+          onChange={(text) => {
+            console.log(text.target.value);
+          }}
+        ></input> */}
         {charactersArray.map((char) => (
-          <div
-            className="cards"
-            key={char.id}
-            id={char.id}
-          >
+          <div className="cards" key={char.id} id={char.id}>
             <Characterinfo charlist={char} />
           </div>
         ))}

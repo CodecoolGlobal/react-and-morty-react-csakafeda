@@ -1,21 +1,21 @@
+
 .body{
   background-color: rgb(102,140,86)
-}
 
+}
 
 .App {
-  background-color: rgb(102,140,86);
- 
-
+  background-color: rgb(102, 140, 86);
 }
+
 .starting-images{
  width: 1fr;
  height:1fr;
  display: flex;
  flex-direction: row;
 
-}
 
+}
 
 .char-button,
 .location-button {
@@ -34,9 +34,11 @@
   transition-duration: 0.1s;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+
 }
 
 .char-button:hover,
@@ -46,6 +48,7 @@
   color: rgb(78, 173, 200);
   text-shadow: 1px 1px #000000;
   font-size: 30px;
+
   border-radius: 10px;
 }
 
@@ -54,6 +57,7 @@
   margin-top: 15px;
   margin-left: 30px;
   margin-right: 30px;
+
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -64,8 +68,9 @@
   background-color: rgb(156,233,82);
   outline: 5px outset green;
 }
-.logo{
+.logo {
   width: 100vw;
+
   height: 80vh;
 
 }
@@ -107,3 +112,4 @@
 .page-link{
 
 }
+
