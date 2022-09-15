@@ -43,7 +43,7 @@ function App() {
         <div className="starting-info-container">
            <div className="starting-info">
           
-            Hello! Our website is a location/caracter libary, giving you additional information to you favorite charater/location.
+            Hello! This fan website is a location/caracter libary, giving you additional information to you favorite charater/location.
               </div>
 
           <div className="starting-images"/>

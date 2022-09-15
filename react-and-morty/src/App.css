@@ -6,6 +6,7 @@
 
 .App {
   background-color: rgb(102, 140, 86);
+ font-size: 20px;
 }
 
 .starting-images{
@@ -71,7 +72,7 @@
 .logo {
   width: 100vw;
 
-  height: 80vh;
+  height: 50vh;
 
 }
 .bug,
@@ -109,7 +110,5 @@
     justify-content: space-between;
     justify-content: center;
   }
-.page-link{
 
-}
 
