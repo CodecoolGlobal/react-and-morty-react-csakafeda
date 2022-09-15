@@ -6,14 +6,15 @@ import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
 import logo from "./components/IMG_0042.jpg";
 import Pagination from "./components/Pagination";
+import { useEffect } from "react";
 
 function App() {
   const [selected, setSelected] = useState("");
-  const [pageNum, setPageNum] = useState(1);
-  // const [defaultPage, setDefaultPage ] = useState(1)
+  const [charPageNum, setCharPageNum] = useState(1);
+  const [locPageNum, setLocPageNum] = useState(1);
 
-  const characters = useCharacters(pageNum);
-  const locations = useLocations(pageNum);
+  const characters = useCharacters(charPageNum);
+  const locations = useLocations(locPageNum);
 
   // console.log("Characters data: ");
   // console.log(characters);
@@ -26,13 +27,15 @@ function App() {
       <Navigation
         onNavigate={(where) => {
           setSelected(where);
+          setCharPageNum(1);
+          setLocPageNum(1);
         }}
       />
       <Pagination
         className="pagination"
         nPages={selected === "ch" ? 42 : selected === "lc" ? 7 : 0}
-        currentPage={pageNum}
-        setCurrentPage={setPageNum}
+        currentPage={selected === "ch" ? charPageNum : locPageNum}
+        setCurrentPage={selected === "ch" ? setCharPageNum : setLocPageNum}
       />
       {selected === "" ? (
         <div className="starting-info">
