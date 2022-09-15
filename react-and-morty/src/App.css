@@ -17,7 +17,7 @@
 
 
 }
-
+.home-button,
 .char-button,
 .location-button {
  
@@ -41,7 +41,7 @@
     border-radius: 10px;
 
 }
-
+.home-button:hover,
 .char-button:hover,
 .location-button:hover {
   
