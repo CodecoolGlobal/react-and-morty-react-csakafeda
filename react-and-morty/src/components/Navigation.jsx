@@ -1,3 +1,5 @@
+import "../App.css";
+
 const Navigation = ({ onNavigate }) => {
   return (
     <div className="Navigation">

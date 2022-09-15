@@ -11,11 +11,11 @@ export default function Locationinfo({ loclist }) {
       }}
     >
       {!showMore ? (
-        <div>
+        <div className="locbasic-info">
           <span>{loclist.name}</span>
         </div>
       ) : (
-        <div>
+        <div className="loc-info">
           <span>{loclist.name}</span>
           <br></br>
           <span>{loclist.type}</span>

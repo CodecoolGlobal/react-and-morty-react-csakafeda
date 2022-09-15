@@ -1,0 +1,47 @@
+.location-list {
+    
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.page-item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(65, 255, 62, 0.436);
+  flex-direction: row;
+  box-shadow: 10px 6px 10px 0 rgba(0, 0, 0, 0.513);
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+}
+
+.loc-info,
+.locbasic-info {
+  outline: 5px groove rgb(136, 255, 0);
+
+  border-radius: 10px; /* 5px rounded corners */
+  background-color: rgba(0, 255, 55, 0.904);
+}
+
+.card {
+  position: relative;
+  margin-bottom:20px;
+  height: 100%;
+  background-color: rgba(65, 255, 62, 0.436);
+  width: 200px;
+  padding: 30px;
+ margin: 15px;
+  box-shadow: 10px 6px 10px 0 rgba(0, 0, 0, 0.513);
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+}
+.page-item {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border: 1px;
+}
