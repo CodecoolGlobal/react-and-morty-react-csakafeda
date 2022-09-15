@@ -18,7 +18,7 @@ function App() {
   // console.log("Characters data: ");
   // console.log(characters);
   // console.log("Locations data: ");
-  console.log(locations);
+  // console.log(locations);
 
   return (
     <div className="App">
@@ -29,7 +29,7 @@ function App() {
         }}
       />
       <Pagination
-      className="pagination"
+        className="pagination"
         nPages={selected === "ch" ? 42 : selected === "lc" ? 7 : 0}
         currentPage={pageNum}
         setCurrentPage={setPageNum}
