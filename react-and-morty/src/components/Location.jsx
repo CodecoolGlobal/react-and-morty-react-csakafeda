@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Locationinfo from "./Locationinfo";
-
+import "./locations.css";
 export default function LocationListing({ loclist }) {
   const [locationList, setLocationList] = useState(false);
 
@@ -20,7 +20,7 @@ export default function LocationListing({ loclist }) {
       <div className="location-list">
         {locationsArray.map((loclist) => {
           return (
-            <div className="cards" key={loclist.id} index={loclist.id}>
+            <div className="card" key={loclist.id} index={loclist.id}>
               <Locationinfo loclist={loclist} />
             </div>
           );

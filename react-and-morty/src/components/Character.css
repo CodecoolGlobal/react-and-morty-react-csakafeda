@@ -1,36 +1,56 @@
 .cards {
-    background-color: rgb(189,240,159);
+    background-color: rgb(102, 244, 8);
     width: 300px;
    padding: 10px;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 20px; /* 5px rounded corners */
+    margin-bottom: 15px;
   }
-  .basic{
-    align-items: center;
-    flex-direction: row;
-    background-color: rgb(102, 244, 8);
+  .basicinfo{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color:  rgb(189,240,159);
+    
   }
   .info{
-    background-color: rgb(102, 244, 8);
-    flex-direction: row;
+    border-radius: 15px;
+    background-color: rgb(189,240,159);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
   }
   .charactercardfull{
-    display: flex;
-   /* display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-   flex-wrap: wrap;*/
-   display: grid;
-   grid-template-columns: auto auto auto;
    column-gap: 50px;
-   row-gap: 50px
+   row-gap: 50px;
+   position: relative;
+   bottom:0 ;
+   height: 100%;
   }
 
   .char-list{
-    background-color:rgb(148,193,134) ;
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .image{
+border-radius: 20px;
+
+  }
+  .basicinfo span{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+
+  }
+  a:link, a:visited {
+    color: rgb(59, 133, 167); 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+  }
+  

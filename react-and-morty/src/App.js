@@ -5,6 +5,8 @@ import LocationList from "./components/Location";
 import Navigation from "./components/Navigation";
 import CharacterList from "./components/Character";
 import logo from "./components/IMG_0042.jpg";
+import pic from "./components/Realistic-Krombopulos-Michael-by-Connor-Gartland.webp";
+import pic2 from "./components/shitter.jpeg";
 import Pagination from "./components/Pagination";
 import { useEffect } from "react";
 
@@ -38,8 +40,15 @@ function App() {
         setCurrentPage={selected === "ch" ? setCharPageNum : setLocPageNum}
       />
       {selected === "" ? (
-        <div className="starting-info">
-          Hello! There is some infos for really big Rick and Morty fans
+        <div className="starting-info-container">
+          <div className="starting-info">
+            Hello! This fan website is a location/caracter libary, giving you
+            additional information to you favorite charater/location.
+          </div>
+
+          <div className="starting-images" />
+          <img className="bug" src={pic} />
+          <img className="sitter" src={pic2} />
         </div>
       ) : selected === "ch" ? (
         <div>

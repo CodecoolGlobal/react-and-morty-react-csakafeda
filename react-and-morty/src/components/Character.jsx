@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Characterinfo from "./CharacterInfo";
-import "../loader.css"
+import "../loader.css";
 
 export default function CharacterListing({ charlist }) {
   const [characterList, setCharacterList] = useState(false);
