@@ -1,39 +1,45 @@
 import { useState } from "react";
-import "./Character.css"
+import "./Character.css";
+// import PreLoadImg from "./preloadImg";
 
-export default function Characterinfo({ charlist }) {
+export default function Characterinfo({ charlist, isLoaded }) {
   const [showMore, setShowMore] = useState(false);
+  // console.log(isLoaded)
   return (
-    <div className="charactercardfull" onClick={() => {setShowMore(!showMore)  }}>
-      
+    <div
+      className="charactercardfull"
+      onClick={() => {
+        setShowMore(!showMore);
+      }}
+    >
       {!showMore ? (
         <div className="basic">
           <img src={charlist.image} />
           <div>
-          <br />
-          <span>Name: {charlist.name}</span>
-          <br />
-          <span>Species: {charlist.species}</span>
-          <br />
+            <br />
+            <span>Name: {charlist.name}</span>
+            <br />
+            <span>Species: {charlist.species}</span>
+            <br />
           </div>
         </div>
       ) : (
         <div className="infoblock">
           <img src={charlist.image} />
           <div className="info">
-          <br />
-          <span>Name: {charlist.name}</span>
-          <br />
-          <span>Species: {charlist.species}</span>
-          <br />
-          <span>Gender: {charlist.gender}</span>
-          <br />
-          <span>Status: {charlist.status}</span>
-          <br />
-          <span>Origin: {charlist.origin.name}</span>
-          <br />
-          <span>Location: {charlist.location.name}</span>
-          <br />
+            <br />
+            <span>Name: {charlist.name}</span>
+            <br />
+            <span>Species: {charlist.species}</span>
+            <br />
+            <span>Gender: {charlist.gender}</span>
+            <br />
+            <span>Status: {charlist.status}</span>
+            <br />
+            <span>Origin: {charlist.origin.name}</span>
+            <br />
+            <span>Location: {charlist.location.name}</span>
+            <br />
           </div>
         </div>
       )}
