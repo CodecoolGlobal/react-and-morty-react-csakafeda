@@ -8,7 +8,6 @@ import logo from "./components/IMG_0042.jpg";
 import pic from "./components/Realistic-Krombopulos-Michael-by-Connor-Gartland.webp";
 import pic2 from "./components/shitter.jpeg";
 import Pagination from "./components/Pagination";
-import { useEffect } from "react";
 
 function App() {
   const [selected, setSelected] = useState("");
@@ -55,7 +54,7 @@ function App() {
         <div>
           <CharacterList charlist={characters} />
         </div>
-      ) :(
+      ) : (
         <LocationList loclist={locations} locid={locations.id} />
       )}
     </div>

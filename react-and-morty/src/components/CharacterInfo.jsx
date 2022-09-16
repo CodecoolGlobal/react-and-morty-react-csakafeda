@@ -4,7 +4,6 @@ import "./Character.css";
 
 export default function Characterinfo({ charlist }) {
   const [showMore, setShowMore] = useState(false);
-  // console.log(isLoaded)
   return (
     <div
       className="charactercardfull"
