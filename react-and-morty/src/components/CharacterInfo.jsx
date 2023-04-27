@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Character.css";
-// import PreLoadImg from "./preloadImg";
 
 export default function Characterinfo({ charlist }) {
   const [showMore, setShowMore] = useState(false);
