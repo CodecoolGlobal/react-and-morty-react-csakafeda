@@ -17,11 +17,6 @@ function App() {
   const characters = useCharacters(charPageNum);
   const locations = useLocations(locPageNum);
 
-  // console.log("Characters data: ");
-  // console.log(characters);
-  // console.log("Locations data: ");
-  // console.log(locations);
-
   return (
     <div className="App">
       <img className="logo" src={logo} />
